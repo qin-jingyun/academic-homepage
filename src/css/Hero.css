@@ -1,0 +1,124 @@
+.profile-pic{
+    width: 100%;
+}
+/* .hero-grid{
+} */
+
+@media (max-width: 1000px) {
+    .profile-pic{
+        width: 80%;
+        margin-top: 4rem;
+    }
+}
+
+.hero-meta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-font-img {
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 0.3rem;
+}
+
+.meta-subtitle {
+    font-size: 1.3rem;
+    color: #000000;
+    letter-spacing: 0.01em;
+    margin-top: 0.1rem;
+    margin-bottom: -0.15rem;
+    font-weight: 1000;
+}
+.meta-description{
+    margin: 0.6rem 1rem 0.8rem;
+    font-size: 0.95rem;
+    color: #000000;
+    text-align: left;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+
+/* --- rainbow border button --- */
+@keyframes rainbowBorderFlow {
+    0%   { background-position: 0 0, 0% 50%; }
+    50%  { background-position: 0 0, 100% 50%; }
+    100% { background-position: 0 0, 0% 50%; }
+}
+.meta-linkitem{
+    margin-top: 0.26rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1.5px solid #d5d5d5;
+    border-radius: 999px;
+    padding: 4.5px 5px;
+    color: #333;
+    font-size: 0.98rem;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.0rem;
+    text-decoration: none;
+    transition: border-color 0.25s;
+}
+.meta-linkitem:hover {
+    border-color: transparent;
+    background-image:
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(270deg, #ff7f96, #ffb07f, #ffcd49, #f3dc12, #b8cc7d, #7dcd6f, #6fcda6, #87dcdc, #7fcaff, #7f9dff, #9b7fff, #c57fff, #ff7fb9);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    background-size: 100% 100%, 400% 400%;
+    color: #333;
+    -webkit-text-fill-color: #333;
+    animation: rainbowBorderFlow 4s ease infinite;
+}
+
+.contact-small{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.meta-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- icon hover: rainbow color cycle (SVG currentColor) --- */
+@keyframes rainbowColorCycle {
+    0%   { color: #ff7f96; }
+    14%  { color: #ffb07f; }
+    28%  { color: #ffcd49; }
+    42%  { color: #7dcd6f; }
+    57%  { color: #6fcda6; }
+    71%  { color: #7fcaff; }
+    85%  { color: #9b7fff; }
+    100% { color: #ff7fb9; }
+}
+.icon-link{
+    font-size: 1.4rem;
+    color: #000000;
+    transition: color 0.2s;
+}
+.icon-link:hover {
+    animation: rainbowColorCycle 4s ease infinite;
+}
+
+.small-text{
+    color: #000000;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: italic;
+}
